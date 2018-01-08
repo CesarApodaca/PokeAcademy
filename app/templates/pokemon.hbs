@@ -1,0 +1,78 @@
+<div class="pokemonTitles">
+  <h1 style="text-align:center; font-weight: 100; font-family:Roboto">Here's the Pokemon info.</h1>
+</div>
+<div>
+  <div class="row">
+    <div class="col-md-4">
+      <div>
+        <div class="cardTop d-flex align-items-center">
+          <div class="textCardTop">
+            <h4 class="">#{{model.id}}: {{model.name}}</h4>
+          </div>
+        </div>
+        <div class="cardBottom">
+          <div class="imgPokemon">
+            <img src={{model.sprites.front_default}}>
+          </div>
+          <div class="infoPokemon">
+            <p>Type: {{#each model.types as |type|}}
+                      {{type.type.name}}
+                      {{/each}}
+            </p>
+            <p>Height: {{model.height}}</p>
+            <p>Weight: {{model.weight}}</p>
+            <p>Base Experience: {{model.base_experience}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div>
+        <div class="cardTop d-flex align-items-center">
+          <div class="textCardTop">
+            <h4 class="">BASE STATS</h4>
+          </div>
+        </div>
+        <div class="cardBottom">
+          <div class="baseStatsPadding">
+            <table class="centerTable">
+              <thead>
+                <tr>
+                  <th style="width: 200px"></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+              {{#each model.stats as |statInfo|}}
+                <tr class="spaceStats">
+                  <td>{{statInfo.stat.name}}</td>
+                  <td>{{statInfo.base_stat}}</td>
+                </tr>
+              {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div>
+        <div class="cardTop d-flex align-items-center">
+          <div class="textCardTop">
+            <h4 class="">ABILITIES</h4>
+          </div>
+        </div>
+        <div class="cardBottom">
+          <div class="scroll">
+           {{#each model.moves as |moveInfo|}}
+             <p>{{moveInfo.move.name}}</p>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  {{#link-to 'index' class="btn btn-info"}}return home{{/link-to}}
+</div>

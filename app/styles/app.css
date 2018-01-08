@@ -1,0 +1,121 @@
+#custom-search-input{
+  padding: 3px;
+  border: solid 1px #b9b9b9;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+#custom-search-input input{
+  border: 0;
+  box-shadow: none;
+}
+
+#custom-search-input button{
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+  font-size: 23px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+  color: rgba(255, 255, 255, 0.39);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(111, 5, 5);
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+  color: rgba(255, 255, 255, 0.39);
+}
+
+
+/* Pokemon Titles */
+.pokemonTitles
+{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+/* Cards - Pokemon */
+.cardTop
+{
+  height:50px;
+  background-color:#b3b3b3;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.cardBottom
+{
+  min-height:280px;
+  background-color: #e0e0e0;
+}
+
+.textCardTop h4
+{
+  font-weight: 100;
+  font-size:15px;
+  margin-bottom:0;
+  margin-left:10px;
+}
+
+.cardBottom .scroll
+{
+  overflow-y: auto;
+  max-height: 280px;
+  text-align: center;
+}
+
+.imgPokemon
+{
+  width:96px;
+  margin: 0 auto;
+}
+
+.noDecoration:link, .noDecoration:visited
+{
+  color:rgba(255, 255, 255, 0.39);
+  text-decoration: none;
+
+}
+
+.spaceStats
+{
+  height:40px;
+}
+
+.centerTable
+{
+  margin: 0 auto;
+}
+
+.infoPokemon
+{
+  text-align: center;
+}
+
+.baseStatsPadding
+{
+  padding-top: 20px;
+}
